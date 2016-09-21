@@ -1,3 +1,72 @@
-div{
-    color:red;
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+  transition: all .3s linear;
+  margin: 0;
+  padding: 0;
+}
+.logo_cont {
+  position: absolute;
+  z-index: 10;
+  margin-top: 30px;
+}
+.logo{
+    color: #fff;
+    font-family: "ProximaNova Bold" monospace; 
+    font-weight: bolder;
+    text-decoration: none !important;
+    font-size: 20px;
+    margin-top: -5px;
+    border-right: 1px solid #939393;
+    padding-right: 20px;
+    &:hover{
+        text-shadow: 0 0 10px #fff;
+        color: #fff;
+    }
+}
+.logo_tel{
+    color: #fff;
+    font-family: "ProximaNova Bold"; 
+    font-weight: bolder;
+    text-decoration: none !important;
+    &:hover{
+        text-shadow: 0 0 10px #fff;
+        color: #fff;
+    }
+}
+.text_carousel_position{
+    margin-bottom: 150px;
+    a{
+        background-color: #6fb048;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.header_line{
+    margin-left: 50px;
+    width: 1050px;
+}
+.list_link{
+    margin-left: 85px;
+    ul{
+        li{
+            margin-left: 20px;
+            a{
+                color: #bec8c8;
+                font-family: "Montserrat Regular" monospace; 
+                font-weight: bolder;
+                text-decoration: none;
+                &:hover{
+                    color: white;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
 }
