@@ -1,3 +1,5 @@
+@color_dark_blue:#0f5f5c;
+@color_blue:#83a7a5;
 body,
 html {
   height: 100%;
@@ -8,6 +10,12 @@ html {
   box-sizing: border-box;
   transition: all .3s linear;
   margin: 0;
+  padding: 0;
+}
+.content{
+  width: 1349px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
 }
 .logo_cont {
@@ -73,24 +81,24 @@ html {
 .text_align_center{
     text-align: center;
     h3{
-        color: #0f5f5c;
+        color: @color_dark_blue;
         margin-top: 95px;
     }
     p{
-        color: #83a7a5;
+        color: @color_blue;
     }
 }
 .design{
     margin-top: 60px;
     .title{
-        color: #0f5f5c;
+        color: @color_dark_blue;
         margin-top: 25px;
         margin-bottom: 20px;
         font-weight: bolder;
     }
 }
 .title_bold{
-    color: #0f5f5c;
+    color: @color_dark_blue;
     margin-top: 25px;
     margin-bottom: 20px;
     font-weight: bolder;
@@ -102,7 +110,7 @@ html {
     p{
         margin-top: 20px;
         width: 500px;
-        color: #83a7a5;
+        color: @color_blue;
     }
 }
 .creative{
@@ -111,7 +119,7 @@ html {
     }
     p{
         margin-top: 10px;
-        color: #83a7a5;
+        color: @color_blue;
     }
 }
 .pixel_free_forever{
@@ -128,7 +136,68 @@ html {
     text-align: center;
     margin-top: 130px;
     h3{
-        color: #0f5f5c;
+        color: @color_dark_blue;
         margin-top: 75px;
+    }
+    p{
+        color: @color_blue;
+    }
+}
+.responsive_ready_text{
+    width: 470px;
+    text-align: left;
+    margin-right: 150px;
+    margin-top: 70px;
+    p{
+        color: @color_blue;
+    }
+    ul{
+        margin-top: 20px; 
+        li{
+            list-style: none;
+            background-image: url("/img/main_contant/list_style_circle.png");
+            background-repeat: no-repeat;
+            padding-left: 35px;
+            padding-bottom: 20px;
+            color: @color_blue;
+        }
+    }
+}
+.par_coment{
+    margin-top: 200px;
+    p{
+        color: @color_blue;
+        font-family: "Montserrat Regular" monospace;
+    }
+    .name_green{
+        display: block;
+        color: #6fb048;
+        font-family: "Montserrat Regular" monospace; 
+        font-weight: bolder;
+        font-size: 12px;
+        margin-top: 70px;
+    }
+    .director_font{
+        color: @color_blue;
+        font-size: 12px;
+    }
+}
+.img_girl{
+    margin-top: 130px;
+    margin-left: 50px;
+}
+.background_map{
+    background-image: url("/img/main_contant/map.jpg");
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    .par_h3_map{
+        margin-top: 140px;
+        h3{
+            color: @color_dark_blue;
+        }
+        p{
+            color: @color_blue;
+        }
     }
 }

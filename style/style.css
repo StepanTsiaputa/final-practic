@@ -10,6 +10,12 @@ html {
   margin: 0;
   padding: 0;
 }
+.content {
+  width: 1349px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
 .logo_cont {
   position: absolute;
   z-index: 10;
@@ -125,4 +131,65 @@ html {
 .background_telephone h3 {
   color: #0f5f5c;
   margin-top: 75px;
+}
+.background_telephone p {
+  color: #83a7a5;
+}
+.responsive_ready_text {
+  width: 470px;
+  text-align: left;
+  margin-right: 150px;
+  margin-top: 70px;
+}
+.responsive_ready_text p {
+  color: #83a7a5;
+}
+.responsive_ready_text ul {
+  margin-top: 20px;
+}
+.responsive_ready_text ul li {
+  list-style: none;
+  background-image: url("/img/main_contant/list_style_circle.png");
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  color: #83a7a5;
+}
+.par_coment {
+  margin-top: 200px;
+}
+.par_coment p {
+  color: #83a7a5;
+  font-family: "Montserrat Regular" monospace;
+}
+.par_coment .name_green {
+  display: block;
+  color: #6fb048;
+  font-family: "Montserrat Regular" monospace;
+  font-weight: bolder;
+  font-size: 12px;
+  margin-top: 70px;
+}
+.par_coment .director_font {
+  color: #83a7a5;
+  font-size: 12px;
+}
+.img_girl {
+  margin-top: 130px;
+  margin-left: 50px;
+}
+.background_map {
+  background-image: url("/img/main_contant/map.jpg");
+  height: 500px;
+  width: 100%;
+  margin-top: 100px;
+}
+.background_map .par_h3_map {
+  margin-top: 140px;
+}
+.background_map .par_h3_map h3 {
+  color: #0f5f5c;
+}
+.background_map .par_h3_map p {
+  color: #83a7a5;
 }
