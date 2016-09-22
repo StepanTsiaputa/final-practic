@@ -193,3 +193,109 @@ html {
 .background_map .par_h3_map p {
   color: #83a7a5;
 }
+.text_align_panel {
+  margin-top: 40px;
+  margin-left: 200px;
+}
+.panel_plan {
+  padding: 0;
+  width: 250px;
+}
+.text_align_c {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.panel_price h4 {
+  color: #6fb048;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.panel_price .price {
+  color: #0f5f5c;
+  display: block;
+  font-weight: bolder;
+  font-size: 60px;
+  font-family: "Montserrat Regular" monospace;
+}
+.panel_price ul {
+  margin-top: 20px;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+.panel_price ul li {
+  color: #83a7a5;
+  padding-bottom: 10px;
+}
+.panel_price .month {
+  color: #0f5f5c;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: -15px;
+}
+.panel_price .button_left_right {
+  padding: 10px 20px 10px 20px;
+  background-color: #83a7a5;
+  color: #fff;
+  text-transform: uppercase;
+}
+.panel_price .button_center {
+  padding: 10px 20px 10px 20px;
+  background-color: #6fb048;
+  color: #fff;
+  text-transform: uppercase;
+}
+.text_al_cen {
+  text-align: center;
+}
+.big_list_plans {
+  margin-left: 50px;
+}
+.big_list_plans ul {
+  margin-top: 40px;
+}
+.big_list_plans ul li {
+  list-style: none;
+  background-image: url("/img/main_contant/list_style_circle.png");
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  color: #83a7a5;
+  text-align: left;
+}
+.need_help {
+  color: #6fb048;
+}
+.need_help_paragraph {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.support_mail {
+  color: #0f5f5c;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+.wapik_download_background {
+  height: 200px;
+  width: 100%;
+  background-image: url("/img/main_contant/computer.jpg");
+  margin-top: 90px;
+}
+.wapik_download_background {
+  padding-top: 50px;
+}
+.wapik_download_background h3 {
+  color: #0f5f5c;
+}
+.wapik_download_background p {
+  color: #83a7a5;
+}
+.wapik_download_background a {
+  text-transform: uppercase;
+  padding: 5px 20px 5px 20px;
+  background-color: #6fb048;
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-left: 130px;
+}
