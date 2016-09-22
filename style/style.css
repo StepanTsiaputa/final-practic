@@ -384,6 +384,9 @@ html {
 .about_us p {
   color: #83a7a5;
 }
+.about_us_next {
+  margin-top: 110px;
+}
 .our_team {
   background-color: #eef1ec;
   width: 100%;
@@ -391,4 +394,50 @@ html {
   background-repeat: no-repeat;
   text-align: center;
   margin-top: 130px;
+}
+.our_team p {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our_team span {
+  display: block;
+  text-align: left;
+}
+.our_team .team_people {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+}
+.our_team .team_people_name {
+  margin-top: 15px;
+  color: #0f5f5c;
+  font-weight: bolder;
+}
+.our_team .team_people_job_title {
+  color: #83a7a5;
+}
+.wapik_download_background_green {
+  height: 200px;
+  width: 1349px;
+  background-image: url("/img/about_us_page/green_background.jpg");
+  margin-left: auto;
+  margin-right: auto;
+}
+.wapik_download_background_green .row {
+  margin-top: 60px;
+}
+.wapik_download_background_green a {
+  text-transform: uppercase;
+  padding: 5px 20px 5px 20px;
+  background-color: #49732f;
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-left: 130px;
+}
+.wapik_download_background_green a:hover {
+  transform: scale(1.1);
+  color: #fff;
 }
