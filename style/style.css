@@ -1,3 +1,23 @@
+@font-face {
+  src: url("/fonts/Montserrat/Montserrat-Regular.otf");
+  font-family: "Montserrar_Regular";
+}
+@font-face {
+  src: url("/fonts/Merriweather/Merriweather Light.ttf");
+  font-family: "Merriweather_Light";
+}
+@font-face {
+  src: url("/fonts/Roboto/Roboto-Regular.ttf");
+  font-family: "Roboto_Regular";
+}
+@font-face {
+  src: url("/fonts/Roboto/Roboto-Light.ttf");
+  font-family: "Roboto_Light";
+}
+@font-face {
+  src: url("/fonts/Roboto/Roboto-Medium.ttf");
+  font-family: "Roboto_Medium";
+}
 body,
 html {
   height: 100%;
@@ -47,12 +67,21 @@ html {
 }
 .text_carousel_position {
   margin-bottom: 150px;
+  text-align: left;
 }
 .text_carousel_position a {
   background-color: #6fb048;
   padding: 10px;
   text-decoration: none;
   color: #fff;
+  font-family: Montserrar_Regular;
+}
+.text_carousel_position h3 {
+  font-family: Roboto_Regular;
+}
+.text_carousel_position p {
+  width: 400px;
+  font-family: Roboto_Regular;
 }
 .header_line {
   margin-left: 50px;
@@ -70,7 +99,7 @@ html {
 }
 .list_link ul li a {
   color: #bec8c8;
-  font-family: "Montserrat Regular" monospace;
+  font-family: Montserrar_Regular;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -84,9 +113,12 @@ html {
 .text_align_center h3 {
   color: #0f5f5c;
   margin-top: 95px;
+  font-family: Roboto_Light;
+  font-weight: bold;
 }
 .text_align_center p {
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .design {
   margin-top: 60px;
@@ -96,27 +128,36 @@ html {
   margin-top: 25px;
   margin-bottom: 20px;
   font-weight: bolder;
+  font-family: Roboto_Regular;
+}
+.design p {
+  font-family: Roboto_Regular;
 }
 .title_bold {
   color: #0f5f5c;
   margin-top: 25px;
   margin-bottom: 20px;
   font-weight: bolder;
+  font-family: Roboto_Regular;
 }
 .browser .title_bold {
   margin-left: 17px;
+  font-family: Roboto_Regular;
 }
 .browser p {
   margin-top: 20px;
   width: 500px;
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .creative .title_bold {
   margin-left: 17px;
+  font-family: Roboto_Regular;
 }
 .creative p {
   margin-top: 10px;
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .pixel_free_forever {
   margin-top: 60px;
@@ -124,10 +165,12 @@ html {
 .browser_creative {
   margin-top: 200px;
 }
+.grey_background {
+  background-color: #eef1ec;
+}
 .background_telephone {
   background-image: url("/img/main_contant/telephone.jpg");
   width: 100%;
-  height: 665px;
   background-repeat: no-repeat;
   text-align: center;
   margin-top: 130px;
@@ -135,9 +178,12 @@ html {
 .background_telephone h3 {
   color: #0f5f5c;
   margin-top: 75px;
+  font-family: Roboto_Light;
+  font-weight: bold;
 }
 .background_telephone p {
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .responsive_ready_text {
   width: 470px;
@@ -145,11 +191,16 @@ html {
   margin-right: 150px;
   margin-top: 70px;
 }
+.responsive_ready_text h3 {
+  font-family: Roboto_Light;
+}
 .responsive_ready_text p {
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .responsive_ready_text ul {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 .responsive_ready_text ul li {
   list-style: none;
@@ -158,25 +209,30 @@ html {
   padding-left: 35px;
   padding-bottom: 20px;
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .par_coment {
   margin-top: 200px;
 }
 .par_coment p {
   color: #83a7a5;
-  font-family: "Montserrat Regular" monospace;
+  line-height: 2;
+  width: 400px;
+  font-size: 15px;
+  font-family: Merriweather_Light;
 }
 .par_coment .name_green {
   display: block;
   color: #6fb048;
-  font-family: "Montserrat Regular" monospace;
   font-weight: bolder;
   font-size: 12px;
-  margin-top: 70px;
+  margin-top: 20px;
+  font-family: Roboto_Medium;
 }
 .par_coment .director_font {
   color: #83a7a5;
   font-size: 12px;
+  font-family: Roboto_Regular;
 }
 .img_girl {
   margin-top: 130px;
@@ -184,7 +240,6 @@ html {
 }
 .background_map {
   background-image: url("/img/main_contant/map.jpg");
-  height: 500px;
   width: 100%;
   margin-top: 100px;
 }
@@ -193,9 +248,13 @@ html {
 }
 .background_map .par_h3_map h3 {
   color: #0f5f5c;
+  font-family: Roboto_Light;
+  font-weight: bold;
 }
 .background_map .par_h3_map p {
   color: #83a7a5;
+  margin-bottom: 150px;
+  font-family: Roboto_Regular;
 }
 .text_align_panel {
   margin-top: 40px;
@@ -219,7 +278,7 @@ html {
   display: block;
   font-weight: bolder;
   font-size: 60px;
-  font-family: "Montserrat Regular" monospace;
+  font-family: Montserrar_Regular;
 }
 .panel_price ul {
   margin-top: 20px;
@@ -229,18 +288,21 @@ html {
 .panel_price ul li {
   color: #83a7a5;
   padding-bottom: 10px;
+  font-family: Roboto_Regular;
 }
 .panel_price .month {
   color: #0f5f5c;
   position: absolute;
   margin-left: -20px;
   margin-top: -15px;
+  font-family: Roboto_Regular;
 }
 .panel_price .button_left_right {
   padding: 10px 20px 10px 20px;
   background-color: #83a7a5;
   color: #fff;
   text-transform: uppercase;
+  font-family: Montserrar_Regular;
 }
 .panel_price .button_left_right:hover {
   transform: scale(1.1);
@@ -250,12 +312,24 @@ html {
   background-color: #6fb048;
   color: #fff;
   text-transform: uppercase;
+  font-family: Montserrar_Regular;
 }
 .panel_price .button_center:hover {
   transform: scale(1.1);
 }
+.panel_left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.panel_center {
+  border-radius: 0;
+}
 .text_al_cen {
   text-align: center;
+}
+.panel_right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .big_list_plans {
   margin-left: 50px;
@@ -271,19 +345,23 @@ html {
   padding-bottom: 20px;
   color: #83a7a5;
   text-align: left;
+  font-family: Roboto_Regular;
 }
 .need_help {
   color: #6fb048;
+  font-family: Roboto_Light;
 }
 .need_help_paragraph {
   width: 500px;
   margin-left: auto;
   margin-right: auto;
+  font-family: Roboto_Regular;
 }
 .support_mail {
   color: #0f5f5c;
   font-weight: bolder;
   margin-top: 40px;
+  font-family: Roboto_Regular;
 }
 .wapik_download_background {
   height: 200px;
@@ -296,9 +374,12 @@ html {
 }
 .wapik_download_background h3 {
   color: #0f5f5c;
+  font-family: Roboto_Light;
+  font-weight: bold;
 }
 .wapik_download_background p {
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .wapik_download_background a {
   text-transform: uppercase;
@@ -308,6 +389,7 @@ html {
   font-weight: bolder;
   margin-top: 30px;
   margin-left: 130px;
+  font-family: Montserrar_Regular;
 }
 .wapik_download_background a:hover {
   transform: scale(1.1);
@@ -319,6 +401,7 @@ html {
 .footer_logo h3 {
   color: #0f5f5c;
   font-weight: bolder;
+  font-family: "ProximaNova Bold";
 }
 .footer_logo a {
   text-decoration: none;
@@ -332,25 +415,31 @@ html {
 }
 .footer_logo ul li {
   padding-bottom: 10px;
+  font-family: Roboto_Regular;
 }
 .footer_logo ul li span {
   color: #0f5f5c;
   font-weight: 600;
+  font-family: Roboto_Regular;
 }
 .footer_list {
   margin-top: 100px;
 }
 .footer_list h4 {
   color: #0f5f5c;
+  font-family: Roboto_Medium;
 }
 .footer_list p {
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .footer_list ul {
   list-style: none;
 }
 .footer_list ul li {
   color: #83a7a5;
+  font-family: Roboto_Regular;
+  padding-bottom: 10px;
 }
 .footer_list ul li a {
   text-decoration: none;
@@ -361,12 +450,24 @@ html {
   background-color: #eef1ec;
   border: none;
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .footer_list span {
   color: #6fb048;
 }
+.logo_footer {
+  color: #0f5f5c;
+  font-weight: bolder;
+  font-family: "ProximaNova Bold";
+}
+.logo_footer h3 {
+  color: #0f5f5c;
+  font-weight: bolder;
+  font-family: "ProximaNova Bold";
+}
 .footer_end p {
   color: #83a7a5;
+  font-family: Roboto_Regular;
 }
 .footer_end a {
   padding-left: 5px;

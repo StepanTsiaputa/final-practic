@@ -1,5 +1,25 @@
 @color_dark_blue:#0f5f5c;
 @color_blue:#83a7a5;
+@font-face{
+    src: url("/fonts/Montserrat/Montserrat-Regular.otf");
+    font-family: "Montserrar_Regular";
+}
+@font-face{
+    src: url("/fonts/Merriweather/Merriweather Light.ttf");
+    font-family: "Merriweather_Light";
+}
+@font-face{
+    src: url("/fonts/Roboto/Roboto-Regular.ttf");
+    font-family: "Roboto_Regular";
+}
+@font-face{
+    src: url("/fonts/Roboto/Roboto-Light.ttf");
+    font-family: "Roboto_Light";
+}
+@font-face{
+    src: url("/fonts/Roboto/Roboto-Medium.ttf");
+    font-family: "Roboto_Medium";
+}
 body,
 html {
   height: 100%;
@@ -49,11 +69,20 @@ html {
 }
 .text_carousel_position{
     margin-bottom: 150px;
+    text-align: left;
     a{
         background-color: #6fb048;
         padding: 10px;
         text-decoration: none;
         color: #fff;
+        font-family: Montserrar_Regular;
+    }
+    h3{
+        font-family: Roboto_Regular;
+    }
+    p{
+        width: 400px;
+        font-family: Roboto_Regular;
     }
 }
 .header_line{
@@ -71,7 +100,7 @@ html {
             margin-left: 20px;
             a{
                 color: #bec8c8;
-                font-family: "Montserrat Regular" monospace; 
+                font-family: Montserrar_Regular; 
                 font-weight: bolder;
                 text-decoration: none;
                 &:hover{
@@ -87,9 +116,12 @@ html {
     h3{
         color: @color_dark_blue;
         margin-top: 95px;
+        font-family: Roboto_Light;
+        font-weight: bold;
     }
     p{
         color: @color_blue;
+        font-family: Roboto_Regular;
     }
 }
 .design{
@@ -99,6 +131,10 @@ html {
         margin-top: 25px;
         margin-bottom: 20px;
         font-weight: bolder;
+        font-family: Roboto_Regular;
+    }
+    p{
+        font-family: Roboto_Regular;
     }
 }
 .title_bold{
@@ -106,24 +142,29 @@ html {
     margin-top: 25px;
     margin-bottom: 20px;
     font-weight: bolder;
+    font-family: Roboto_Regular;
 }
 .browser{
     .title_bold{
         margin-left: 17px;
+        font-family: Roboto_Regular;
     }
     p{
         margin-top: 20px;
         width: 500px;
         color: @color_blue;
+        font-family: Roboto_Regular;
     }
 }
 .creative{
     .title_bold{
         margin-left: 17px;
+        font-family: Roboto_Regular;
     }
     p{
         margin-top: 10px;
         color: @color_blue;
+        font-family: Roboto_Regular;
     }
 }
 .pixel_free_forever{
@@ -132,19 +173,25 @@ html {
 .browser_creative{
     margin-top: 200px;
 }
+.grey_background{
+    background-color: #eef1ec;
+}
 .background_telephone{
     background-image: url("/img/main_contant/telephone.jpg");
     width: 100%;
-    height: 665px;
     background-repeat: no-repeat;
     text-align: center;
     margin-top: 130px;
     h3{
         color: @color_dark_blue;
         margin-top: 75px;
+        font-family: Roboto_Light;
+        font-weight: bold;
     }
     p{
         color: @color_blue;
+        font-family: Roboto_Regular;
+        
     }
 }
 .responsive_ready_text{
@@ -152,11 +199,16 @@ html {
     text-align: left;
     margin-right: 150px;
     margin-top: 70px;
+    h3{
+        font-family: Roboto_Light;
+    }
     p{
         color: @color_blue;
+        font-family: Roboto_Regular;
     }
     ul{
-        margin-top: 20px; 
+        margin-top: 20px;
+        margin-bottom: 50px;
         li{
             list-style: none;
             background-image: url("/img/main_contant/list_style_circle.png");
@@ -164,6 +216,7 @@ html {
             padding-left: 35px;
             padding-bottom: 20px;
             color: @color_blue;
+            font-family: Roboto_Regular;
         }
     }
 }
@@ -171,20 +224,27 @@ html {
     margin-top: 200px;
     p{
         color: @color_blue;
-        font-family: "Montserrat Regular" monospace;
+        line-height: 2;
+        width: 400px;
+        font-size: 15px;
+        font-family: Merriweather_Light;
     }
     .name_green{
         display: block;
         color: #6fb048;
-        font-family: "Montserrat Regular" monospace; 
         font-weight: bolder;
         font-size: 12px;
-        margin-top: 70px;
+        margin-top: 20px;
+        font-family: Roboto_Medium;
     }
     .director_font{
         color: @color_blue;
         font-size: 12px;
+        font-family: Roboto_Regular;
     }
+}
+.paragraph_line_height{
+    
 }
 .img_girl{
     margin-top: 130px;
@@ -192,16 +252,19 @@ html {
 }
 .background_map{
     background-image: url("/img/main_contant/map.jpg");
-    height: 500px;
     width: 100%;
     margin-top: 100px;
     .par_h3_map{
         margin-top: 140px;
         h3{
             color: @color_dark_blue;
+            font-family: Roboto_Light;
+        font-weight: bold;
         }
         p{
             color: @color_blue;
+            margin-bottom: 150px;
+            font-family: Roboto_Regular;
         }
     }
 }
@@ -228,7 +291,7 @@ html {
         display: block;
         font-weight: bolder;
         font-size: 60px;
-        font-family: "Montserrat Regular" monospace;
+        font-family: Montserrar_Regular;
     }
     ul{
         margin-top: 20px;
@@ -237,6 +300,7 @@ html {
         li{
             color: @color_blue;
             padding-bottom: 10px;
+            font-family: Roboto_Regular;
         }
     }
     .month{
@@ -244,12 +308,14 @@ html {
         position: absolute;
         margin-left: -20px;
         margin-top: -15px;
+        font-family: Roboto_Regular;
     }
     .button_left_right{
         padding: 10px 20px 10px 20px;
         background-color: #83a7a5;
         color: #fff;
         text-transform: uppercase;
+        font-family: Montserrar_Regular;
         &:hover{
             transform: scale(1.1);
         }
@@ -259,13 +325,25 @@ html {
         background-color: #6fb048;
         color: #fff;
         text-transform: uppercase;
+        font-family: Montserrar_Regular;
         &:hover{
             transform: scale(1.1);
         }
     }
 }
+.panel_left{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.panel_center{
+    border-radius: 0;
+}
 .text_al_cen{
     text-align: center;
+}
+.panel_right{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .big_list_plans{
     margin-left: 50px;
@@ -279,21 +357,25 @@ html {
             padding-bottom: 20px;
             color: @color_blue;
             text-align: left;
+            font-family: Roboto_Regular;
         }
     }
 }
 .need_help{
     color: #6fb048;
+    font-family: Roboto_Light;
 }
 .need_help_paragraph{
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+    font-family: Roboto_Regular;
 }
 .support_mail{
     color: @color_dark_blue;
     font-weight: bolder;
     margin-top: 40px;
+    font-family: Roboto_Regular;
 }
 .wapik_download_background{
     height: 200px;
@@ -305,9 +387,12 @@ html {
     padding-top: 50px;
     h3{
         color: @color_dark_blue;
+        font-family: Roboto_Light;
+        font-weight: bold;
     }
     p{
         color: @color_blue;
+        font-family: Roboto_Regular;
     }
     a{
         text-transform: uppercase;
@@ -317,6 +402,7 @@ html {
         font-weight: bolder;
         margin-top: 30px;
         margin-left: 130px;
+        font-family:  Montserrar_Regular;
         &:hover{
             transform: scale(1.1);
             color:#fff;
@@ -328,6 +414,7 @@ html {
     h3{
         color: @color_dark_blue;
         font-weight: bolder;
+        font-family: "ProximaNova Bold"
     }
     a{
         text-decoration: none;
@@ -340,9 +427,11 @@ html {
         color: @color_blue;
         li{
             padding-bottom: 10px;
+            font-family: Roboto_Regular;
             span{
                 color: @color_dark_blue;
                 font-weight: 600;
+                font-family: Roboto_Regular;
             }
         }
     }
@@ -351,14 +440,18 @@ html {
     margin-top: 100px;
     h4{
         color: @color_dark_blue;
+        font-family: Roboto_Medium;
     }
     p{
         color: @color_blue;
+        font-family: Roboto_Regular;
     }
     ul{
        list-style: none;
         li{
             color: @color_blue;
+            font-family: Roboto_Regular;
+            padding-bottom: 10px;
             a{
                 text-decoration: none;
                 color: @color_blue;
@@ -370,14 +463,26 @@ html {
         background-color: #eef1ec;
         border: none;
         color: @color_blue;
+        font-family: Roboto_Regular;
     }
     span{
         color: #6fb048;
     }
 }
+.logo_footer{
+        color: @color_dark_blue;
+        font-weight: bolder;
+        font-family: "ProximaNova Bold";
+    h3{
+        color: @color_dark_blue;
+        font-weight: bolder;
+        font-family: "ProximaNova Bold";
+    }
+}
 .footer_end{
     p{
         color: @color_blue;
+        font-family: Roboto_Regular;
     }
     a{
         padding-left: 5px;
