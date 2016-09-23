@@ -645,3 +645,14 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+.form_input input {
+  width: 500px;
+  height: 45px;
+  border: 1px solid #83a7a5;
+  color: #83a7a5;
+  box-shadow: 0px 1px 5px #83a7a5;
+}
+.form_input .input_message {
+  height: 100px;
+  color: #83a7a5;
+}
