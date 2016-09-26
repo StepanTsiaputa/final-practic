@@ -645,14 +645,68 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+.form_input {
+  margin-top: 80px;
+}
 .form_input input {
   width: 500px;
   height: 45px;
   border: 1px solid #83a7a5;
-  color: #83a7a5;
-  box-shadow: 0px 1px 5px #83a7a5;
+  box-shadow: 0px 0.5px 0 #83a7a5;
+  font-family: Roboto_Regular;
+  color: #0f5f5c;
+  padding: 10px;
+  text-align: justify;
 }
 .form_input .input_message {
   height: 100px;
+  padding-bottom: 60px;
+}
+.form_input .btn_send_message {
+  background-color: #6fb048;
+  text-transform: uppercase;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  font-family: Montserrar_Regular;
+}
+.form_input .btn_send_message:hover {
+  transform: scale(1.1);
+}
+.contact_info {
+  margin-top: 80px;
+  border: 2px dashed #c1d3d2;
+  padding: 30px;
+  width: 330px;
+}
+.contact_info h4 {
+  font-size: 22px;
+  font-family: Roboto_Light;
+  color: #0f5f5c;
+  text-transform: uppercase;
+}
+.contact_info .map_marker {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: -85px;
+}
+.contact_info .cont_adress_paragraph {
+  display: inline-block;
+  font-family: Roboto_Regular;
   color: #83a7a5;
+  font-size: 15px;
+}
+.contact_info .cont_phone_paragraph {
+  font-family: Roboto_Regular;
+  color: #83a7a5;
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.contact_info .cont_mail_paragraph {
+  font-family: Roboto_Regular;
+  color: #0f5f5c;
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
 }

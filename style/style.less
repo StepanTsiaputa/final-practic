@@ -663,15 +663,67 @@ html {
     }
 }
 .form_input{
+    margin-top: 80px;
     input{
         width: 500px;
         height: 45px;
         border: 1px solid @color_blue;
-        color: @color_blue;
-        box-shadow: 0px 1px 5px @color_blue;
+        box-shadow: 0px 0.5px 0 @color_blue;
+        font-family: Roboto_Regular;
+        color: @color_dark_blue;
+        padding: 10px;
+        text-align: justify;
     }
     .input_message{
         height: 100px;
+        padding-bottom: 60px;
+    }
+    .btn_send_message{
+        background-color: #6fb048;
+        text-transform: uppercase;
+        padding: 10px 30px 10px 30px;
+        color: #fff;
+        font-family: Montserrar_Regular;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.contact_info{
+    margin-top: 80px;
+    border: 2px dashed #c1d3d2;
+    padding: 30px;
+    width: 330px;
+    h4{
+        font-size: 22px;
+        font-family: Roboto_Light;
+        color: @color_dark_blue;
+        text-transform: uppercase;
+    }
+    .map_marker{
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: -85px;
+    }
+    .cont_adress_paragraph{
+        display: inline-block;
+        font-family: Roboto_Regular;
         color: @color_blue;
+        font-size: 15px;
+    }
+    .cont_phone_paragraph{
+        font-family: Roboto_Regular;
+        color: @color_blue;
+        font-size: 15px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .cont_mail_paragraph{
+        font-family: Roboto_Regular;
+        color: @color_dark_blue;
+        font-size: 15px;
+        display: inline-block;
+        margin-left: 10px;
+        font-weight: bold;
     }
 }
