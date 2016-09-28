@@ -37,10 +37,25 @@ html {
   padding: 0;
 }
 .content{
-  width: 1349px;
+  max-width: 1349px;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
+  z-index: 1;
+}
+.content_header{
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1349px;
+    z-index: 1;
+}
+.content_header_static{
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1349px;
+    z-index: 1;
 }
 .logo_cont{
     height: 30px;
@@ -58,6 +73,7 @@ html {
     color: #fff !important;
     padding-left: 20px;
     border-left: 1px solid #c0c0c0;
+    font-weight: bold;
     &:hover{
         text-decoration: none;
         text-shadow: 0 0 10px #fff;
@@ -68,16 +84,18 @@ html {
     }
 }
 .nav_container{
-    position: absolute;
     z-index: 10;
 }
 .menu_main_position{
-    width: 1000px;
-    margin-left: 150px;
     margin-top: 30px;
     border-bottom: 1px solid #c0c0c0;
     margin-bottom: 20px;
     padding-bottom: 10px;
+}
+.cont_div_rel{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 .list_menu{
     li{
@@ -102,8 +120,6 @@ html {
     }
 }
 .slider_background{
-    position: relative;
-    margin-top: -100px;
     width: 1349px;
     margin-left: auto;
     margin-right: auto;
@@ -124,7 +140,7 @@ html {
         font-size: 38px;
     }
     p{
-        width: 400px;
+        max-width: 400px;
         font-family: Roboto_Regular;
         font-size: 16px;
     }
@@ -205,7 +221,7 @@ html {
     }
     p{
         margin-top: 20px;
-        width: 500px;
+        max-width: 500px;
         color: @color_blue;
         font-family: Roboto_Regular;
         font-size: 14px;
@@ -236,10 +252,12 @@ html {
 }
 .background_telephone{
     background-image: url("/img/main_contant/telephone.jpg");
-    width: 100%;
+    width: 1349px;
     background-repeat: no-repeat;
     text-align: center;
     margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
     h3{
         color: @color_dark_blue;
         margin-top: 40px;
@@ -256,7 +274,7 @@ html {
     }
 }
 .responsive_ready_text{
-    width: 470px;
+    max-width: 470px;
     text-align: left;
     margin-right: 150px;
     margin-top: 70px;
@@ -289,7 +307,7 @@ html {
     p{
         color: @color_blue;
         line-height: 2;
-        width: 500px;
+        max-width: 500px;
         font-size: 15px;
         font-family: Merriweather_Light;
         font-size: 22px;
@@ -351,7 +369,7 @@ html {
     font-weight: bold;
 }
 .pricing_plan_paragraph{
-    width: 500px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     font-family: Roboto_Regular;
@@ -465,7 +483,7 @@ html {
     font-family: Roboto_Light;
 }
 .need_help_paragraph{
-    width: 500px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     font-family: Roboto_Regular;
@@ -476,10 +494,14 @@ html {
     font-weight: bolder;
     margin-top: 40px;
     font-family: Roboto_Regular;
+    text-decoration: none;
+    &:hover{
+        color: @color_blue;
+    }
 }
 .wapik_download_background{
-    height: 200px;
-    width: 1349px;
+    padding-bottom: 60px;
+    max-width: 1349px;
     background-image: url("/img/main_contant/computer.jpg");
     margin-top: 90px;
     margin-left: auto;
@@ -608,7 +630,7 @@ html {
         font-family: Roboto_Regular;
         font-size: 15px;
         margin-top: 30px; 
-        width: 700px;
+        max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -658,8 +680,8 @@ html {
     
 }
 .wapik_download_background_green{
-    height: 200px;
-    width: 1349px;
+    padding-bottom: 60px; 
+    max-width: 1349px;
     background-image: url("/img/about_us_page/green_background.jpg");
     margin-left: auto;
     margin-right: auto;
@@ -705,16 +727,14 @@ html {
         text-shadow: 0 0 10px #0f5f5c;
     }
 }
-.contact_header_menu{
-    width: 1000px;
-    margin-left: 150px;
+.menu_main_position_contact{
     margin-top: 30px;
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
 .navbar-default {
-    background-color: #fff !important; 
-    border-color: #fff !important; 
+    background-color: transparent!important; 
+    border-color: transparent!important; 
 }
 .list_menu_contact{
     li{
@@ -743,7 +763,7 @@ html {
 }
 .iframe_container{
     padding: 0;
-    margin-top: 45px;
+    margin-top: 110px;
 }
 .get_in_contact{
     margin-top: 70px;
@@ -830,17 +850,20 @@ html {
 .pricing_header_menu{
     width: 1000px;
     margin-left: 150px;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #c0c0c0;
+    position: relative;
 }
 .contetnt_plan_panel{
+    max-width: 1349px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     background-color: #eef1ec;
     padding-top: 60px;
     position: relative;
-    margin-top: -70px;
     padding-bottom: 50px;
     h3{
         margin-top: 140px;
@@ -890,5 +913,27 @@ html {
         color: @color_blue;
         font-size: 15px;
         font-family: Roboto_Regular;
+    }
+}
+@media (max-width:768px) {
+    .nav_container{
+        position: static;
+        z-index: 10;
+    }
+}
+@media (max-width:768px){
+    .navbar{
+        position: static !important;
+        min-height: 50px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        display: inline-block;
+    }
+    .content_header{
+        position: static;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1349px;
+        z-index: 1;
     }
 }
