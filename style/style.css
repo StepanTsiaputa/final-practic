@@ -41,37 +41,70 @@ html {
   padding: 0;
 }
 .logo_cont {
-  position: absolute;
-  z-index: 10;
-  margin-top: 30px;
+  height: 30px;
 }
-.logo {
-  color: #fff;
+.main_logo {
   font-family: Proxima_Nova_Bold;
-  font-weight: bolder;
-  text-decoration: none !important;
-  font-size: 28px;
-  margin-top: -10px;
-  border-right: 1px solid #939393;
+  font-size: 29px;
+  color: #fff !important;
   padding-right: 20px;
 }
-.logo:hover {
+.main_logo:hover {
   text-shadow: 0 0 10px #fff;
-  color: #fff;
 }
-.logo_tel {
-  color: #fff;
-  font-family: "ProximaNova Bold";
-  font-weight: bolder;
-  text-decoration: none !important;
+.main_logo_tel {
+  color: #fff !important;
+  padding-left: 20px;
+  border-left: 1px solid #c0c0c0;
 }
-.logo_tel:hover {
+.main_logo_tel:hover {
+  text-decoration: none;
   text-shadow: 0 0 10px #fff;
-  color: #fff;
+}
+.main_logo_tel span {
+  color: #bec8c8;
+  padding-right: 10px;
+}
+.nav_container {
+  position: absolute;
+  z-index: 10;
+}
+.menu_main_position {
+  width: 1000px;
+  margin-left: 150px;
+  margin-top: 30px;
+  border-bottom: 1px solid #c0c0c0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.list_menu li a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-family: Montserrar_Regular;
+  font-size: 13px;
+}
+.list_menu li a:hover {
+  text-shadow: 0 0 10px #fff;
+}
+.btn_started {
+  background-color: #6a7f7f;
+  padding: 5px 14px !important;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.btn_started:hover {
+  background-color: #596969 !important;
+}
+.slider_background {
+  position: relative;
+  margin-top: -100px;
+  width: 1349px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .text_carousel_position {
-  margin-bottom: 150px;
   text-align: left;
+  padding-bottom: 100px;
 }
 .text_carousel_position a {
   background-color: #6fb048;
@@ -90,13 +123,9 @@ html {
   font-family: Roboto_Regular;
   font-size: 16px;
 }
-.header_line {
-  margin-left: 50px;
-  width: 1050px;
-}
 .btn_learn:hover {
-  transform: scale(1.1);
   color: #fff;
+  background-color: #538436;
 }
 .list_link {
   margin-left: 85px;
@@ -111,7 +140,8 @@ html {
   text-decoration: none;
 }
 .list_link ul li a:hover {
-  color: white;
+  color: #bec8c8;
+  text-shadow: 0 0 10px #fff;
   border-radius: 2px;
 }
 .text_align_center {
@@ -121,40 +151,48 @@ html {
   color: #0f5f5c;
   margin-top: 95px;
   font-family: Roboto_Light;
-  font-weight: bold;
   font-size: 32px;
 }
 .text_align_center p {
   color: #83a7a5;
   font-family: Roboto_Regular;
   font-size: 15px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 .design {
   margin-top: 60px;
+  text-align: center;
 }
 .design .title {
   color: #0f5f5c;
   margin-top: 25px;
   margin-bottom: 20px;
-  font-weight: bolder;
   font-family: Roboto_Regular;
   font-size: 16px;
+  font-weight: bold;
 }
 .design p {
   font-family: Roboto_Regular;
   font-size: 14px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #83a7a5;
 }
 .title_bold {
   color: #0f5f5c;
   margin-top: 25px;
   margin-bottom: 20px;
-  font-weight: bolder;
   font-family: Roboto_Regular;
 }
 .browser .title_bold {
   margin-left: 17px;
   font-family: Roboto_Regular;
   font-size: 16px;
+  font-weight: bold;
 }
 .browser p {
   margin-top: 20px;
@@ -167,6 +205,7 @@ html {
   margin-left: 17px;
   font-family: Roboto_Regular;
   font-size: 16px;
+  font-weight: bold;
 }
 .creative p {
   margin-top: 10px;
@@ -192,12 +231,13 @@ html {
 }
 .background_telephone h3 {
   color: #0f5f5c;
-  margin-top: 75px;
+  margin-top: 40px;
   font-family: Roboto_Light;
   font-weight: bold;
   font-size: 32px;
 }
 .background_telephone p {
+  margin-top: 15px;
   color: #83a7a5;
   font-family: Roboto_Regular;
   font-size: 15px;
@@ -272,12 +312,14 @@ html {
   font-family: Roboto_Light;
   font-weight: bold;
   font-size: 32px;
+  margin-bottom: 10px;
 }
 .background_map .par_h3_map p {
   color: #83a7a5;
   margin-bottom: 150px;
   font-family: Roboto_Regular;
   font-size: 14px;
+  line-height: 2;
 }
 .text_align_panel {
   margin-top: 40px;
@@ -291,11 +333,24 @@ html {
   text-align: center;
   padding-bottom: 40px;
 }
+.pricing_plan {
+  font-weight: bold;
+}
+.pricing_plan_paragraph {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto_Regular;
+  font-size: 15px;
+  color: #83a7a5;
+  text-align: center;
+  margin-top: 10px;
+}
 .panel_price h4 {
   color: #6fb048;
   font-weight: bolder;
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 15px;
 }
 .panel_price .price {
   color: #0f5f5c;
@@ -332,7 +387,7 @@ html {
   font-size: 14px;
 }
 .panel_price .button_left_right:hover {
-  transform: scale(1.1);
+  background-color: #658482;
 }
 .panel_price .button_center {
   padding: 10px 20px 10px 20px;
@@ -343,7 +398,7 @@ html {
   font-size: 14px;
 }
 .panel_price .button_center:hover {
-  transform: scale(1.1);
+  background-color: #517e35;
 }
 .panel_left {
   border-top-right-radius: 0;
@@ -359,7 +414,17 @@ html {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+.big_list_plans ul li:before {
+  content: "";
+  background-image: url("/img/main_contant/list_style_circle.png");
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  margin-left: -32px;
+  margin-top: -3px;
+}
 .big_list_plans {
+  position: relative;
   margin-left: 50px;
 }
 .big_list_plans ul {
@@ -367,7 +432,6 @@ html {
 }
 .big_list_plans ul li {
   list-style: none;
-  background-image: url("/img/main_contant/list_style_circle.png");
   background-repeat: no-repeat;
   padding-left: 35px;
   padding-bottom: 20px;
@@ -395,9 +459,11 @@ html {
 }
 .wapik_download_background {
   height: 200px;
-  width: 100%;
+  width: 1349px;
   background-image: url("/img/main_contant/computer.jpg");
   margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .wapik_download_background {
   padding-top: 50px;
@@ -415,7 +481,7 @@ html {
 }
 .wapik_download_background a {
   text-transform: uppercase;
-  padding: 5px 20px 5px 20px;
+  padding: 10px 30px 10px 30px;
   background-color: #6fb048;
   color: #fff;
   font-weight: bolder;
@@ -425,7 +491,7 @@ html {
   font-size: 13px;
 }
 .wapik_download_background a:hover {
-  transform: scale(1.1);
+  background-color: #517e35;
   color: #fff;
 }
 .footer_logo {
@@ -483,6 +549,10 @@ html {
   color: #83a7a5;
   font-weight: 300;
 }
+.footer_list ul li a:hover {
+  color: #0f5f5c;
+  font-weight: bolder;
+}
 .footer_list input {
   background-color: #eef1ec;
   border: none;
@@ -523,10 +593,10 @@ html {
 .our_team {
   background-color: #eef1ec;
   width: 100%;
-  height: 665px;
   background-repeat: no-repeat;
   text-align: center;
   margin-top: 130px;
+  padding-bottom: 100px;
 }
 .our_team p {
   width: 700px;
@@ -710,9 +780,13 @@ html {
   margin-left: 10px;
   font-weight: bold;
 }
+.pricing {
+  width: 1349px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .header_page_pricing {
   background-color: #eef1ec;
-  padding: 0;
   padding-bottom: 60px;
   width: 1349px;
 }
@@ -723,6 +797,12 @@ html {
 .header_page_pricing .logo_tel {
   color: #0f5f5c;
   font-weight: bold;
+}
+.header_line_pricing {
+  background-color: #c9c9c9;
+  border: 1px solid #c9c9c9;
+  margin-left: 50px;
+  width: 1050px;
 }
 .logo_page_pricing:hover {
   text-shadow: 0 0 10px #0f5f5c;
