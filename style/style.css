@@ -586,6 +586,10 @@ html {
   color: #83a7a5;
   font-family: Roboto_Regular;
   font-size: 15px;
+  margin-top: 30px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .about_us_next {
   margin-top: 110px;
@@ -615,6 +619,9 @@ html {
   margin-right: auto;
   margin-top: 90px;
 }
+.our_team .team_people img {
+  width: 100%;
+}
 .our_team .team_people_name {
   margin-top: 15px;
   color: #0f5f5c;
@@ -639,7 +646,7 @@ html {
 }
 .wapik_download_background_green a {
   text-transform: uppercase;
-  padding: 5px 20px 5px 20px;
+  padding: 10px 30px 10px 30px;
   background-color: #49732f;
   color: #fff;
   font-weight: bolder;
@@ -649,7 +656,7 @@ html {
   font-size: 13px;
 }
 .wapik_download_background_green a:hover {
-  transform: scale(1.1);
+  background-color: #395a24;
   color: #fff;
 }
 .main_logo_tel_contact {
