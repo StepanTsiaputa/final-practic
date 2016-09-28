@@ -675,54 +675,68 @@ html {
         }
     }
 }
-.contact_header_menu{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.logo_telephone{
-    color: @color_blue;
-    font-family: "ProximaNova Bold"; 
-    font-weight: bolder;
-    text-decoration: none !important;
+.main_logo_tel_contact{
+    color: @color_blue !important;
+    padding-left: 20px;
+    border-left: 1px solid #c0c0c0;
+    font-weight: bold;
     &:hover{
         text-shadow: 0 0 10px @color_blue;
         color: @color_blue;
     }
+    span{
+        color: #bec8c8;
+        padding-right: 10px;
+    }
 }
-.logo_color_dark_blue{
-    color: #0f5f5c;
-    font-family: Proxima_Nova_Bold; 
-    font-weight: bolder;
-    text-decoration: none !important;
-    font-size: 28px;
-    margin-top: -10px;
-    border-right: 1px solid #939393;
+.main_logo_contact{
+    color: #0f5f5c !important;
+    font-family: Proxima_Nova_Bold;
+    font-size: 29px;
     padding-right: 20px;
     &:hover{
         text-shadow: 0 0 10px #0f5f5c;
     }
 }
-.contact_list_link{
-    margin-left: 85px;
-    ul{
-        li{
-            margin-left: 20px;
-            a{
-                color: #bec8c8;
-                font-family: Montserrar_Regular; 
-                font-weight: bolder;
-                text-decoration: none;
-                &:hover{
-                    text-shadow: 0 0 10px  #bec8c8;
-                    color: #bec8c8;
-                    border-radius: 2px;
-                }
+.contact_header_menu{
+    width: 1000px;
+    margin-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.navbar-default {
+    background-color: #fff !important; 
+    border-color: #fff !important; 
+}
+.list_menu_contact{
+    li{
+        a{
+            text-transform: uppercase;
+            font-family: Montserrar_Regular;
+            font-size: 13px;
+            &:hover{
+                text-shadow: 0 0 10px @color_blue;
             }
         }
+    }
+    .color_blue{
+        color: @color_blue !important;
+    }
+}
+.btn_started_contact{
+    background-color: #6fb048;
+    padding: 5px 14px !important;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: #fff !important;
+    &:hover{
+        background-color: #538436 !important;
     }
 }
 .iframe_container{
     padding: 0;
+    margin-top: 45px;
 }
 .get_in_contact{
     margin-top: 70px;
@@ -763,7 +777,7 @@ html {
         color: #fff;
         font-family: Montserrar_Regular;
         &:hover{
-            transform: scale(1.1);
+            background-color: #538436;
         }
     }
 }
@@ -772,6 +786,7 @@ html {
     border: 2px dashed #c1d3d2;
     padding: 30px;
     width: 330px;
+    margin-left: 50px;
     h4{
         font-size: 22px;
         font-family: Roboto_Light;

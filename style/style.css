@@ -652,52 +652,64 @@ html {
   transform: scale(1.1);
   color: #fff;
 }
-.contact_header_menu {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.main_logo_tel_contact {
+  color: #83a7a5 !important;
+  padding-left: 20px;
+  border-left: 1px solid #c0c0c0;
+  font-weight: bold;
 }
-.logo_telephone {
-  color: #83a7a5;
-  font-family: "ProximaNova Bold";
-  font-weight: bolder;
-  text-decoration: none !important;
-}
-.logo_telephone:hover {
+.main_logo_tel_contact:hover {
   text-shadow: 0 0 10px #83a7a5;
   color: #83a7a5;
 }
-.logo_color_dark_blue {
-  color: #0f5f5c;
+.main_logo_tel_contact span {
+  color: #bec8c8;
+  padding-right: 10px;
+}
+.main_logo_contact {
+  color: #0f5f5c !important;
   font-family: Proxima_Nova_Bold;
-  font-weight: bolder;
-  text-decoration: none !important;
-  font-size: 28px;
-  margin-top: -10px;
-  border-right: 1px solid #939393;
+  font-size: 29px;
   padding-right: 20px;
 }
-.logo_color_dark_blue:hover {
+.main_logo_contact:hover {
   text-shadow: 0 0 10px #0f5f5c;
 }
-.contact_list_link {
-  margin-left: 85px;
+.contact_header_menu {
+  width: 1000px;
+  margin-left: 150px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
-.contact_list_link ul li {
-  margin-left: 20px;
+.navbar-default {
+  background-color: #fff !important;
+  border-color: #fff !important;
 }
-.contact_list_link ul li a {
-  color: #bec8c8;
+.list_menu_contact li a {
+  text-transform: uppercase;
   font-family: Montserrar_Regular;
-  font-weight: bolder;
-  text-decoration: none;
+  font-size: 13px;
 }
-.contact_list_link ul li a:hover {
-  text-shadow: 0 0 10px  #bec8c8;
-  color: #bec8c8;
-  border-radius: 2px;
+.list_menu_contact li a:hover {
+  text-shadow: 0 0 10px #83a7a5;
+}
+.list_menu_contact .color_blue {
+  color: #83a7a5 !important;
+}
+.btn_started_contact {
+  background-color: #6fb048;
+  padding: 5px 14px !important;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: #fff !important;
+}
+.btn_started_contact:hover {
+  background-color: #538436 !important;
 }
 .iframe_container {
   padding: 0;
+  margin-top: 45px;
 }
 .get_in_contact {
   margin-top: 70px;
@@ -740,13 +752,14 @@ html {
   font-family: Montserrar_Regular;
 }
 .form_input .btn_send_message:hover {
-  transform: scale(1.1);
+  background-color: #538436;
 }
 .contact_info {
   margin-top: 80px;
   border: 2px dashed #c1d3d2;
   padding: 30px;
   width: 330px;
+  margin-left: 50px;
 }
 .contact_info h4 {
   font-size: 22px;
