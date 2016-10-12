@@ -51,8 +51,8 @@ gulp.task("js-vendor", function(){
         "src/bower_comp/bootstrap/dist/js/bootstrap.js",
         "src/bower_comp/datatables.net/js/jquery.dataTables.js",
         "src/bower_compdatatables.net-bs/js/dataTables.bootstrap.js",
-        "src/js/main.js",
-        "node_modules/toastr/build/toastr.min.js"
+        "node_modules/toastr/build/toastr.min.js",
+        "src/js/main.js"
     ])
     .pipe(addSrc.prepend("src/bower_comp/jquery/dist/jquery.js"))
     .pipe(concat("vendor.min.js"))
@@ -70,7 +70,7 @@ gulp.task("watch", function(){
     });
     gulp.watch("src/style/**/*.less", ["css"]);
     gulp.watch("src/**/*.html", ["html"]);
-    gulp.watch("src/data/*.js", ["js-vendor"]);
+    gulp.watch("src/js/*.js", ["js-vendor"]);
     gulp.watch("dist/**/*.html").on("change", browserSync.reload);
 });
 gulp.task("default", ["html", "img", "fonts", "vendor-css", "css", "js-vendor", "json", "watch"]);
