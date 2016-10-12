@@ -10,17 +10,18 @@ $(document).ready(function() {
         });
     })
     
-} );
+var input_email = document.getElementById("input_email");
+var form_info = document.getElementById("input_form");
 
-var form_btn = document.getElementById("form_info_btn"),
-    input_email = document.getElementById("input_email");
-
-form_btn.addEventListener("click", function(){
-    toastr.info('Message Send!!');
-    event.preventDefault();
-});
-console.log(form_btn);
+    if(form_info){
+        form_info.addEventListener("submit", function(){
+            toastr.info('Message Send!!');
+            event.preventDefault();
+        })
+    }
 input_email.addEventListener("submit", function(){
     toastr.info('The information was sand to your email!!');
     event.preventDefault();
 });
+} );
+
