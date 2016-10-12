@@ -15,12 +15,12 @@ var form_info = document.getElementById("input_form");
 
     if(form_info){
         form_info.addEventListener("submit", function(){
-            toastr.info('Message Send!!');
+            toastr.success('Message Send!!');
             event.preventDefault();
         })
     }
 input_email.addEventListener("submit", function(){
-    toastr.info('The information was sand to your email!!');
+    toastr.success('The information was sand to your email!!');
     event.preventDefault();
 });
 } );
