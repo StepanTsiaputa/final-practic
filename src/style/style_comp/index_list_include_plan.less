@@ -1,0 +1,90 @@
+.content_include_plan{
+    h3{
+        text-align: center;
+        font-size: 22px;
+        font-family: Roboto_Light;
+        color: @color_dark_blue;
+        font-weight: bold;
+        &:after{
+            content: "";
+            background-image: url("/img/main_contant/line.png");
+            display: block;
+            width: 50px;
+            height: 1px;
+            position: absolute;
+            left: 47%;
+            top: 116%;
+        }
+    }
+}
+.big_list_plans{
+    ul{
+        li:before{
+            content: "";
+            background-image: url("/img/main_contant/list_style_circle.png");
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            margin-left: -32px;
+            margin-top: -3px;
+        }
+    }
+}
+.big_list_plans{
+    position: relative;
+    margin-left: 50px;
+    ul{
+        margin-top: 40px;
+        li{
+            list-style: none;
+            background-repeat: no-repeat;
+            padding-left: 35px;
+            padding-bottom: 20px;
+            color: @color_blue;
+            text-align: left;
+            font-family: Roboto_Regular;
+            font-size: 14px;
+        }
+    }
+}
+.need_help_content{
+    text-align: center;
+    h3{
+        font-family: Roboto_Light;
+        font-size: 32px;
+        color: #6fb048;
+        margin-bottom: 40px;
+        &:after{
+            content: "";
+            background-image: url("/img/main_contant/line.png");
+            display: block;
+            width: 50px;
+            height: 1px;
+            position: absolute;
+            left: 48%;
+            top: 80%;
+        }
+    }
+}
+.need_help_content_par{
+    text-align: center;
+    p{
+        text-align: center;
+        color: @color_blue;
+        font-size: 15px;
+        font-family: Roboto_Regular;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .support_mail{
+        font-family: Roboto_Regular;
+        font-size: 18px;
+        color: @color_dark_blue;
+        font-weight: bold;
+        &:hover{
+            text-decoration: none !important;
+            color: @color_blue;
+        }
+    }
+}

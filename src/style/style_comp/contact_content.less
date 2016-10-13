@@ -1,73 +1,5 @@
-.main_logo_tel_contact{
-    color: @color_blue !important;
-    padding-left: 20px;
-    border-left: 1px solid #c0c0c0;
-    font-weight: bold;
-    &:hover{
-        text-shadow: 0 0 10px @color_blue;
-        color: @color_blue;
-        text-decoration: none;
-    }
-    span{
-        color: #bec8c8;
-        padding-right: 10px;
-    }
-}
-.main_logo_contact{
-    font-family: Proxima_Nova_Bold;
-    font-size: 30px;
-    color: #0f5f5c !important;
-    padding-right: 20px;
-    &:hover{
-        text-shadow: 0 0 10px #0f5f5c;
-    }
-}
-.navbar-brand {
-    font-size: 29px !important;
-}
-.main_logo_p_cont{
-    color: #0f5f5c !important;
-    font-family: Proxima_Nova_Bold;
-    font-size: 29px;
-    padding-right: 20px;
-    &:hover{
-        text-shadow: 0 0 10px #0f5f5c;
-    }
-}
-.position_menu_cont_pric{
-    margin-top: 20px;
-}
-.navbar-default {
-    background-color: transparent!important; 
-    border-color: transparent!important; 
-}
-.list_menu_contact{
-    li{
-        a{
-            text-transform: uppercase;
-            font-family: Montserrar_Regular;
-            font-size: 13px;
-            &:hover{
-                text-shadow: 0 0 10px @color_blue;
-            }
-        }
-    }
-    .color_blue{
-        color: @color_blue !important;
-    }
-}
-.btn_started_contact{
-    background-color: #6fb048;
-    padding: 5px 14px !important;
-    border-radius: 4px;
-    margin-top: 10px;
-    color: #fff !important;
-    &:hover{
-        background-color: #538436 !important;
-    }
-}
 .iframe_container{
-    padding: 0;
+    padding: 0 !important;
 }
 .get_in_contact{
     margin-top: 70px;
@@ -75,31 +7,32 @@
         color:@color_dark_blue;
         font-size: 32px;
         font-family: Roboto_Light;
+        text-align: center;
+        &:after{
+            content: "";
+            background-image: url("/img/main_contant/line.png");
+            display: block;
+            width: 50px;
+            height: 1px;
+            position: absolute;
+            left: 47%;
+            top: 50%;
+        }
     }
     p{
         color:@color_blue;
         font-family: Roboto_Regular;
         font-size: 15px;
-        width: 400px;
+        max-width: 400px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 45px;
     }
 }
-.get_in_touch:before{
-    content: "";
-    background-image: url("/img/main_contant/line.png");
-    display: block;
-    width: 50px;
-    height: 1px;
-    position: absolute;
-    left: 48%;
-    top: 50%;
-}
 .form_input{
     margin-top: 80px;
     input{
-        width: 500px;
+        width: 100%;
         height: 45px;
         border: 1px solid @color_blue;
         box-shadow: 0px 0.5px 0 @color_blue;
@@ -127,7 +60,7 @@
     margin-top: 80px;
     border: 2px dashed #c1d3d2;
     padding: 30px;
-    width: 330px;
+    max-width: 330px;
     margin-left: 50px;
     h4{
         font-size: 22px;
@@ -162,10 +95,3 @@
         font-weight: bold;
     }
 }
-@media (max-width: 768px){
-    .container {
-        width: 500px !important;
-    }
-}
-    
-    
