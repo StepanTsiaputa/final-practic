@@ -42,7 +42,7 @@
         }
     }
 }
-.btn_started{
+#btn_started{
     background-color: #6a7f7f;
     padding: 5px 14px !important;
     border-radius: 4px;
@@ -51,8 +51,10 @@
         background-color: #596969 !important;
     }
 }
-.conteiner_position_relative{
+.conteiner_position_absolut{
     position: absolute;
+    left: auto;
+    right: auto;
     z-index: 1;
 }
 .navbar-default {
@@ -60,7 +62,7 @@
     border-color: transparent !important; 
 }
 @media(max-width:786px){
-    .conteiner_position_relative{
+    .conteiner_position_absolut{
         position: static;
     }
     .main_logo{
@@ -72,10 +74,41 @@
     .menu_main_position{
         border-bottom: 0px solid #c0c0c0;
     }
+    .main_logo_tel{
+        color: @color_dark_blue !important;
+        display: inline-block;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent !important;
+    }
+    .list_menu{
+        li{
+            a{
+                color: @color_blue !important;
+                text-transform: uppercase;
+                font-family: Montserrar_Regular;
+                font-size: 13px;
+                &:hover{
+                    text-shadow: 0 0 10px #fff;
+                }
+            }
+        }
+    }
+    #btn_started{
+        background-color: @color_blue;
+        padding: 5px 14px !important;
+        color: #fff !important;
+        &:hover{
+            background-color: #596969 !important;
+        }
+    }
 }
 @media(max-width:400px){
     .main_logo_tel{
         color: @color_dark_blue !important;
         display: inline-block;
+    }
+    .list_menu{
+        margin-top: 20px;
     }
 }
