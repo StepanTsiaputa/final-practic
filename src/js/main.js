@@ -1,3 +1,20 @@
+$("#input_email").validate({
+       rules: {
+           email: {
+               required: true,
+               email: true
+
+           }
+       },
+       messages: {
+
+           email: {
+               required: "This field is required",
+               email: "Please enter a valid email address"
+           }
+       }
+   
+   });
 $(document).ready(function() {
     $.getJSON("js/data.json", function(data){
        $('#table_people').DataTable({
@@ -46,6 +63,44 @@ if ($('#back-to-top').length) {
     });
 }
 
+//$('#form_info').validate({
+//    rules: {
+//        name: {
+//            required: true,
+//            minlength: 3,
+//            maxlength: 20,
+//        },
+//
+//        email: {
+//            required: true,
+//            email: true,
+//        },
+//        phone: {
+//            required: true,
+//            minlength: 6,
+//            maxlength: 16,
+//        },
+//    },
+//
+//    messages: {
+//
+//        name: {
+//            required: "Please Tell Me Your Name",
+//            minlength: "Name must be at least 3 characters",
+//            maxlength: "Name is too long",
+//        },
+//
+//        email: {
+//            required: "Please write Your e-mail address",
+//            email: "Your email address is invalid"
+//        },
+//        comment: {
+//          required: "Please write Your e-mail address",
+//          minlength: "Comment must be at least 10 characters",
+//          maxlength: "Comment is too long",
+//        }
+//    }
+//  });
 //$(document).ready(function(){
 //   $("#form_info").validate({
 //       rules:{
@@ -55,8 +110,6 @@ if ($('#back-to-top').length) {
 //            },
 //       },
 //   });
-
-
 //$(function (){
 //    $("#form_info").validate({
 //        submitHandler: function (form){

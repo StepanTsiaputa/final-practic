@@ -51,7 +51,9 @@ gulp.task("js-vendor", function(){
         "src/bower_comp/bootstrap/dist/js/bootstrap.js",
         "src/bower_comp/datatables.net/js/jquery.dataTables.js",
         "src/bower_compdatatables.net-bs/js/dataTables.bootstrap.js",
-        "node_modules/toastr/build/toastr.min.js",
+        "src/bower_comp/jquery-validation/dist/jquery.validate.js",
+        "src/bower_comp/jquery-validation/dist/additional-methods.js",
+        "node_modules/toastr/build/toastr.min.js",        
         "src/js/main.js"
     ])
     .pipe(addSrc.prepend("src/bower_comp/jquery/dist/jquery.js"))
@@ -59,11 +61,6 @@ gulp.task("js-vendor", function(){
     .pipe(uglify())
     .pipe(gulp.dest("dist/js"))
 });
-//gulp.task("js", function(){
-//    return gulp.src("src/data/main.js")
-//    .pipe(uglify())
-//    .pipe(gulp.dest("dist/js"));
-//});
 gulp.task("watch", function(){
     browserSync.init({
         server: "dist"
